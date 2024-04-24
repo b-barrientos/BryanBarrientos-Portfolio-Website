@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bryan Barrientos Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css"
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Bryan Barrientos</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Bryan Barrientos</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic-1.png"
+          alt="Bryan Barrientos Profile Pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Bryan Barrientos</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/BARRIENTOS_BRYAN_Resume_2024.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/-bryanbarrientos/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Github Profile"
+            class="icon"
+            onclick="location.href='https://github.com/b-barrientos'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-profile-pic.jpg"
+            alt="Profile Pic"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years<br />Software Dvelopment</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education Icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.S. Computer Science<br /><br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              My journey into the world of software development started during
+              my formative years in high school. Enrolling in my first AP
+              Computer Science course and immersing myself in programs like
+              EAST, I discovered a profound fascination with software and
+              technology. Experiencing the boundless possibilities it offers, I
+              embarked on a path that led me to pursue a Bachelor's of Science
+              in Computer Science at the University of Central Arkansas.
+              <br /><br />
+              During my academic tenure, I delved deep into the foundational
+              principles of Computer Science, refining my skills and expanding
+              my knowledge base. Complementing my formal education, I seized
+              every opportunity to explore the practical realm of software
+              engineering through internships and full-time positions. It was
+              through these experiences that I ventured into mobile development,
+              specializing in Android Native applications.
+              <br /><br />
+              Over the years, I've embraced the versatility of wearing multiple
+              hats and navigating diverse tech stacks. Each role and project has
+              enriched my expertise and fostered my passion for continuous
+              growth. As I continue to embark on this journey, I am looking
+              forward to expanding my skill sets and contributing to innovative
+              endeavors in the ever-evolving landscape of software development.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Down Icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tech Stack</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/kotlinlang-icon.svg"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>Kotlin</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/java-icon.svg"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/python-icon.svg"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/w3_html5-icon.svg"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/w3_css-icon.svg"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/javascript-icon.svg"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/git-scm-icon.svg"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>PL/SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/pngwing.com.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>CI/CD</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/c.svg" alt="experience icon" class="icon" />
+                <div class="">
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/c--4.svg"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>C#</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Down Icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ScribePad_HomeScreen.png"
+                alt="project 1"
+                class="project-img-scribepad"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ScribePad</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/b-barrientos/ScribePad'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Librillo</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/b-barrientos'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project 3</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/b-barrientos'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Down Icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:bryan.barrientos83@gmail.com"
+              >bryan.barrientos83@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/-bryanbarrientos/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Bryan Barrientos. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
